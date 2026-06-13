@@ -11,7 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(content_types=["text"])
 def echo_all(message):
     try:
-        # Бот просто отправляет обратно тот же текст, что ты ему написал
+        # Бот просто отправляет обратно тот же текст, что ты ему написал да
         bot.reply_to(message, message.text)
     except Exception as e:
         print(f"Ошибка при отправке сообщения: {e}")
